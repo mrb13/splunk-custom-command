@@ -1,10 +1,38 @@
 # splunk-custom-command
-This repo demonstrates how to create a custom command within Splunk Enterprise &amp; invoke that command with Splunk's SPL language. 
+This repo demonstrates how to create a custom command within Splunk Enterprise &amp; invoke that command with Splunk's SPL language. The command will call a Python file that is configured to call an open API (https://randomuser.me/api/). 
 
 ## Assumptions
 Instead of creating a new custom app, this demo will leverage the existing Search & Reporting app.  This demo will update the default "Search" app by adding a new python file & updating the commands.conf file. 
 
 This demo assumes Splunk Enterprise on a Linux server is being used. 
+
+## Source file 
+
+A sample for the randomuser API (https://randomuser.me/api/) response is below.
+
+```
+{
+	"results": [
+		{
+			"gender": "female",
+			"name": {
+				"title": "Ms",
+				"first": "Angela",
+				"last": "Perez"
+			}
+		}
+	],
+	"info": {
+		"seed": "1b20736093b54bd4",
+		"results": 1,
+		"page": 1,
+		"version": "1.3"
+	}
+}
+```
+
+
+# Deployment Details 
 
 ## Deploy Python File
 
