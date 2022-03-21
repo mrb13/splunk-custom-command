@@ -30,7 +30,16 @@ cd /opt/splunk/bin
 ./splunk restart 
 ```
 
-# Splunk SPL 
+## Splunk SPL 
+
+* Run the following command in the Splunk SPL GUI. 
+
+```
+|script py_demo2 0
+```
+* "|script" invokes the custom script
+* "py_demo2" is the custom function name
+* "0" demonstrates passing an argument into a custom function
 
 
 ## References  / Sources 
