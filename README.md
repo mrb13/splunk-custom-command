@@ -36,12 +36,12 @@ A sample for the randomuser API (https://randomuser.me/api/) response is below.
 
 ## Deploy Python File
 
-* Deploy demo.py to directory /opt/splunk/etc/apps/search/bin
+* Deploy demo.py to directory ```/opt/splunk/etc/apps/search/bin```
 * Ensure file is owned by splunk user & permissions are 555
 
 ## Update commands.conf 
 
-* Update commands.conf file located at /opt/splunk/etc/apps/search/local/commands.conf 
+* Update commands.conf file located at ``` /opt/splunk/etc/apps/search/local/commands.conf ```
 
 ```
 [py_demo2]
