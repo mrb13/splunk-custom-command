@@ -19,3 +19,5 @@ result = []
 result.append(dataa["results"][xx]["name"])
 
 man.outputResults(result)
+
+fake_guid_for_testing='93017B0C-D548-40CA-A7B0-D4DA707ABE4C'
